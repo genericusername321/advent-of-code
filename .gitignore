@@ -1,0 +1,15 @@
+# Do not store session cookie
+*.session
+
+# Ignore cache files
+__pycache__/
+*.py[cod]
+
+# Ignore environments
+.venv
+
+# IDE specific settings
+.vscode
+
+# Input files
+*problem_input.txt
