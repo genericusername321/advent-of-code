@@ -1,5 +1,5 @@
 import argparse
-from utils.cli import generate_parser
+from advent_of_code.aoc.cli.cli import generate_parser
 
 if __name__ == "__main__":
 

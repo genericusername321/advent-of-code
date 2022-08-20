@@ -1,18 +1,8 @@
 from pathlib import Path
 
 import requests
-from config import PACKAGE_ROOT, SOLUTION_DIR
-from advent_of_code.utils.package_helpers import create_day_package, create_year_package
-
-
-def create_destination_path(year: int, day: int, solutions_dir: Path) -> Path:
-    """Create path to store the problem input."""
-
-    year_package = create_year_package(year)
-    day_package = create_day_package(day)
-    solution_directory = solutions_dir / year_package / day_package
-    solution_directory.mkdir(parents=True, exist_ok=True)
-    return solution_directory / "problem_input.txt"
+from advent_of_code.config import PACKAGE_ROOT, SOLUTION_DIR
+from advent_of_code.aoc.utils.path_utils import create_problem_input_path
 
 
 def save_problem_input(path, problem_input: bytes) -> None:
@@ -49,5 +39,5 @@ def get_problem_input(
     """Download and write the problem input to its solution directory"""
 
     problem_input = download_problem_input(year, day)
-    destination_path = create_destination_path(year, day, solutions_dir)
+    destination_path = create_problem_input_path(year, day, solutions_dir)
     save_problem_input(destination_path, problem_input)

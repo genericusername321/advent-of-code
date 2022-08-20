@@ -1,11 +1,8 @@
-"""
-Tests for advent_of_code.utils.download_inputs module
-"""
 from pathlib import Path
 
 import pytest
 from advent_of_code.config import PACKAGE_ROOT
-from advent_of_code.utils.download_inputs import create_destination_path
+from advent_of_code.aoc.utils.path_utils import create_solution_package_dir
 
 
 def recursive_rm(path: Path) -> None:
@@ -29,14 +26,17 @@ def test_directory():
     recursive_rm(test_dir)
 
 
-def test_create_destination_path(test_directory):
+def test_create_solutions_package_dir(test_directory):
 
     # Arrange
     year = 2021
-    day = 10
+    day = 1
+    solutions_dir = test_directory
+
+    expected = solutions_dir / "year_2021" / "day_01"
 
     # Act
-    solution_dir = create_destination_path(year, day, test_directory)
+    actual = create_solution_package_dir(year, day, solutions_dir)
 
     # Assert
-    print(solution_dir.name)
+    assert actual == expected
