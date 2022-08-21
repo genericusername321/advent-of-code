@@ -6,7 +6,7 @@ Advent of Code solution
 \"\"\"
 
 from typing import Union
-from utils.base_solution import BaseSolution
+from advent_of_code.aoc.prepare_solution.base_solution import BaseSolution
 
 
 class Solution(BaseSolution):
