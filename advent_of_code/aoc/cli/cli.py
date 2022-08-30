@@ -1,7 +1,7 @@
 import argparse
 
 from advent_of_code.aoc.prepare_solution.prepare_solution import prepare_solution_dir
-from advent_of_code.aoc.runner.runner import run_solution
+from advent_of_code.aoc.runner.runner import SolutionRunner
 
 
 def prepare_solution_dir_wrapper(args: argparse.Namespace) -> None:
@@ -11,7 +11,8 @@ def prepare_solution_dir_wrapper(args: argparse.Namespace) -> None:
 
 def run_wrapper(args: argparse.Namespace) -> None:
 
-    run_solution(args.year, args.day)
+    runner = SolutionRunner(args.year, args.day)
+    runner.run_solutions()
 
 
 def generate_parser():
