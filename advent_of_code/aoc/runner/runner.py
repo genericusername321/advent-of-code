@@ -70,7 +70,7 @@ class SolutionRunner:
             fmt_string.format(
                 year=self.year,
                 day=self.day,
-                part="one",
+                part="two",
                 value=answer_two,
                 duration=duration_two / 1000,
             )
