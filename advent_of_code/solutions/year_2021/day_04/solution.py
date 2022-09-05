@@ -5,7 +5,7 @@ Advent of Code solution
    date: 2022-09-03
 """
 
-from typing import List, Optional, Tuple, Union
+from typing import List, Tuple, Union
 from advent_of_code.aoc.prepare_solution.base_solution import BaseSolution
 
 
