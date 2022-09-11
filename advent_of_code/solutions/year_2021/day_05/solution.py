@@ -9,7 +9,7 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass
 from itertools import product
-from typing import List, Tuple, Union
+from typing import Generator, List, Tuple, Union
 
 from advent_of_code.aoc.prepare_solution.base_solution import BaseSolution
 
@@ -46,7 +46,7 @@ class Line:
     def is_vertical(self):
         return self.start.y == self.end.y
 
-    def generate_coordinates(self):
+    def generate_coordinates(self) -> Generator[Tuple[int, int]]:
         delta = self.end - self.start
         step_x = sign(delta.x)
         step_y = sign(delta.y)
