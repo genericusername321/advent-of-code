@@ -1,10 +1,4 @@
-SOLUTION_TEMPLATE = """\"\"\"
-Advent of Code solution
-   year: {year}
-   day: {day}
-   date: {date}
-\"\"\"
-
+SOLUTION_TEMPLATE = """
 from typing import Union
 from advent_of_code.aoc.prepare_solution.base_solution import BaseSolution
 

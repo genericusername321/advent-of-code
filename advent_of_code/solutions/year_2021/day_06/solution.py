@@ -1,10 +1,3 @@
-"""
-Advent of Code solution
-   year: 2021
-   day: 6
-   date: 2022-09-11
-"""
-
 from collections import Counter
 from itertools import accumulate
 from typing import Iterator, List, Mapping, Union

@@ -1,9 +1,3 @@
-"""
-Advent of Code solution
-   year: 2021
-   day: 5
-   date: 2022-09-11
-"""
 from __future__ import annotations
 
 from collections import defaultdict

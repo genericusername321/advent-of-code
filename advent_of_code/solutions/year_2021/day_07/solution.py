@@ -1,10 +1,3 @@
-"""
-Advent of Code solution
-   year: 2021
-   day: 7
-   date: 2022-09-22
-"""
-
 from math import ceil, floor
 from statistics import median
 from typing import List, Union

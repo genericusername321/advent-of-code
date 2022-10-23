@@ -1,10 +1,3 @@
-"""
-Advent of Code solution
-   year: 2021
-   day: 1
-   date: 2022-08-21
-"""
-
 from typing import List, Union
 from advent_of_code.aoc.prepare_solution.base_solution import BaseSolution
 

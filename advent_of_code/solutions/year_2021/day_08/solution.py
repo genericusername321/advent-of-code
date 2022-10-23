@@ -1,10 +1,3 @@
-"""
-Advent of Code solution
-   year: 2021
-   day: 8
-   date: 2022-10-08
-"""
-
 from collections import defaultdict
 from typing import Dict, List, Set, Union
 
