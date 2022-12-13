@@ -12,4 +12,4 @@ __pycache__/
 .vscode
 
 # Input files
-*problem_input.txt
+**/day*/*.txt
